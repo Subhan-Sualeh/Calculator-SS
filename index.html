@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz@16..144&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+    <h1>Calculator App</h1>
+
+    <input id="input" type="text" class="input" value="" placeholder="0">
+     
+    <br>
+    <table>     
+
+        <tr>
+        <td class="clear" onclick="back()">C</td>  
+        <td class="ac" onclick="allClear()">AC</td>
+        <td class="sum" onclick="sum('%')">%</td>
+        <td class="sum" onclick="sum('/')"><i class="fa-solid fa-divide"></i></td>
+                    
+        </tr>
+
+        <tr>
+           
+        <td onclick="sum('7')">7</td>
+        <td onclick="sum('8')">8</td>
+        <td onclick="sum('9')">9</td>
+        <td class="sum" onclick="sum('*')">x</td>
+                
+        </tr>
+
+        <tr>
+           
+        <td onclick="sum('4')">4</td>
+        <td onclick="sum('5')">5</td>
+        <td onclick="sum('6')">6</td>
+        <td class="sum" onclick="sum('-')">-</td>
+                    
+        </tr>
+
+        <tr>
+        <td onclick="sum('1')">1</td>
+        <td onclick="sum('2')">2</td>
+        <td onclick="sum('3')">3</td>
+        <td class="sum" onclick="sum('+')" >+</td>
+                    
+        </tr>
+
+        <tr>
+
+          <td onclick="sum('0')" colspan="2">0</td>
+          <td onclick="sum('.')" >. </td>
+          <td class="total" onclick="total()" >=</td>
+
+        </tr>
+
+    </table>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+</html>

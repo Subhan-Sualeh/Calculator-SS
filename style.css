@@ -1,0 +1,153 @@
+*{
+    font-family: 'Fjalla One', sans-serif;
+}
+body{
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(39, 39, 39);
+}
+
+h1{
+color: whitesmoke;
+}
+
+.clear{
+
+    background-color: red;
+    border: none;
+    box-shadow: red 0 0 3px 1px;
+
+}
+
+.ac{
+
+    padding: 8px 8px;
+    background-color: red;
+    border: none;
+    box-shadow: red 0 0 3px 1px;
+
+}
+.sum{
+
+    background-color: #418ff3;
+    border: none;
+    box-shadow: #418ff3 0 0 3px 1px;
+
+}
+.total{
+
+    background-color: #fbd616;
+    border: none;
+    box-shadow: #fbd616 0 0 3px 1px;
+
+}
+i{
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+table{
+    
+border-collapse: separate;
+border-spacing: 13px;
+
+}
+td{
+
+background-color: #eeedeb ;
+/* border: 3px #e7e7e7 solid; */
+box-shadow: #cfcdcd 0 0 6px 2px;
+padding: 20px 20px;
+font-size: 3rem; 
+text-align: center;
+cursor: pointer;
+border-radius: 15px;
+}
+
+input{
+
+width: 50%;
+height: 50px;
+font-size: 3rem;
+padding: 10px;
+padding-right: 20px;
+border-radius: 10px;
+box-shadow: rgb(34, 34, 34) 0 0 10px 5px;
+border: none ;
+margin: 15px;
+outline: none;
+border: none;
+color: white;
+background-color: rgb(73, 73, 73);
+
+}
+input :focus{
+    border: none;
+    outline: none;
+}
+input :valid{
+    border: none;
+    outline: none;
+}
+input ::placeholder{
+    color: rgb(250, 0, 0);
+    opacity: 1;
+}
+/*
+div{
+    width: 100vh;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+@media only screen and (max-width:800px){
+
+    body{
+        height: auto;
+        width: 720pxx;
+        justify-content: m;
+        display: block;
+        background-color: rgb(39, 39, 39);
+    }
+    input{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width:600px){
+     h1{
+         display: none;
+     }
+    input{
+        width: 55%;
+        height: 30px;
+        margin: 6px;
+        margin-bottom: 2px;
+        font-size: 2rem;
+    }
+    td{
+        padding: 10px 10px;
+        box-shadow: #cfcdcd 0 0 4px 2px;
+        font-size: 2rem;
+    }
+    i{
+        font-size: 1.5rem;
+        font-weight: 200;
+    }
+    table{
+        border-spacing: 8px;
+    }
+    .ac{
+        padding: 4px 4px;
+    }
+}
+
+@media only screen and (max-width:400px){
+
+    input{
+        width: 80%;
+    }
+}
